@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="">
+  		<meta name="description" content="">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  		<title>Electronic Readings of The Qur’an</title>
+
+  		<link rel="stylesheet" href="css/style.css" media="screen">
+  		<link rel="stylesheet" href="css/aos.css" media="screen">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	</head>
+
+
+	<body>
+<!--Nav Section-------------------------------------------------------------------------------------------------------------> 
+    <!--logo----------->
+     <div class="nav-container" id="navbar">
+        <div class="logo-container">
+          <a class="flex-container" href="index.html">
+            <h1 class="logo">E</h1>
+            <div>
+              <p id="varient-logo-small" class="subtitle-small" dir="rtl" lang="ar">ب سم</p>
+              <hr>
+            </div>
+            <h1 class="logo">Q</h1>
+          </a>
+          
+        </div>
+        
+      <!--nav----------->
+        <nav>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li class="category-name">ENCYCLOPEDIA
+                    <ul class="dropdown">
+                        <li class="page-link"><a href="reading-view.html">Reading View</a></li>
+                        <li class="page-link"><a href="tabular-view.html">Advanced: Varients</a></li>
+                        <li class="page-link"><a href="tabular-view-principles.html">Advanced: Principles</a></li>
+                    </ul>
+                </li>
+                <li class="category-name">RESOURCES
+                    <ul class="dropdown">
+                        <li class="page-link"><a href="related-articles.html">Related Articles</a></li>
+                        <li class="page-link"><a href="related-videos.html">Related Videos</a></li>
+                    </ul>
+                </li>
+                <li class="category-name">ABOUT
+                    <ul class="dropdown">
+                        <li class="page-link"><a href="about.html">About EVQ</a></li>
+                        <li class="page-link"><a href="using-the-site.html">Using the Site</a></li>
+                        <li class="page-link"><a href="news.html">News</a></li>
+                    </ul>
+                </li>
+                <li class="category-name page-link-mobile"><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+<!--Header Section-------------------------------------------------------------------------------> 
+    <header class="blk-bg">
+        <h1 class="ency-title" data-aos="fade-in">Reading View</h1>
+    </header>
+
+
+
+<!--Dropdown pills Section------------------------------------------------------------------------------------------>     
+    <div class="sticky-menu">
+      <div class="selection-container flex-container">
+          <div class="custom-select three-column">   
+              <select class="selection-box" name="chapter" id="chapter">
+              <option value="0">Select Chapter</option>
+              <option>01 The Opening, al-Fatiha</option>
+              <option>02 The Cow, Al barqara</option>
+              <option>03 The Cow, Al barqara</option>
+              </select>    
+          </div>
+
+          <div class="custom-select three-column">  
+              <select class="selection-box" name="verse" id="verse">
+              <option value="0">Select Verse</option>
+              <option>Verses 1 – 10</option>
+              <option>Verses 10 – 20</option>
+              </select>    
+          </div>
+
+          <div class="custom-select three-column">  
+               <select class="selection-box" name="varient" id="varient">
+                <option value="0">Varient Status on Text</option>
+                <option>The Seven Readings</option>
+                <option>The Ten Readings Sughra</option>
+                <option>The Fourteen Readings</option>
+                <option>Shadhdh Uthmanic</option>
+                <option>Gramatical Readings</option>
+                <option>The Ten Readings Kubra</option>
+                <option>Textural corruption-tashif</option>
+                <option>Shi'i Readings</option>
+                <option>No Status</option>
+                </select>    
+            </div>
+          </div>
+      </div>
+
+<!--Main Results area------------------------------------------------------------------------------------------------------> 
+    <main class="ency-container">    
+            <div class="reading-results flex-container align-top">
+                
+                <!--slider buttons----------------------------------->   
+                <div class="results-window"> 
+                    <div class="flex-container align-top reading-header">
+                      <h5 class="letter-space">RESULTS</h5>
+                      
+                      <div class="switch-container flex-container">
+                        <h5 class="switch-title left-title">Hide Vowels</h5>
+                        <div class="switch">
+                          <input type="radio" class="switch-input" name="view" value="show" id="show" checked>
+                          <label for="show" class="switch-label switch-label-off">x</label>
+                          <input type="radio" class="switch-input" name="view" value="hide" id="hide">
+                          <label for="hide" class="switch-label switch-label-on">x</label>
+                          <span class="switch-selection"></span>
+                        </div>
+                        <h5 class="switch-title right-title">Show Vowels</h5>
+                      </div>  
+                      
+                      <div class="switch-container flex-container">
+                        <h6 class="switch-title left-title"><a href="reading-view.html">Varients</a></h6>
+                        <div class="switch">
+                          <input type="radio" class="switch-input" name="view2" value="show2" id="show2" checked>
+                          <label for="show2" class="switch-label switch-label-off">x</label>
+                          <input type="radio" class="switch-input" name="view2" value="hide2" id="hide2">
+                          <label for="hide2" class="switch-label switch-label-on">x</label>
+                          <span class="switch-selection"></span>
+                        </div>                      
+                        <h6 class="switch-title right-title"><a href="reading-view-principles.html">Principles</a></h6>
+                      </div>
+                    </div>  
+
+                    <!--Verses----------------------------------->   
+                    <div class="results">
+                      <div class="row flex-container no-wrap">
+                        
+                        <div class="verse-label">
+                          <h6>1:1</h6>
+                        </div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">بسما لل هال<span class="var-highlight var-selected">رما لل</span>حم نال رحيم</p>
+                        </div>
+                      </div>
+                      <div class="row flex-container no-wrap">
+                        <div class="verse-label">
+                          <h6>1:1</h6>
+                        </div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">بس ما لل هال<span class="var-highlight var-varient-label-rule">ر نا</span>حم نالرح يم</p>
+                        </div>
+                      </div>
+                      <div class="row flex-container no-wrap">
+                        <div class="verse-label">
+                          <h6>1:1</h6>
+                        </div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">بسما لل هالرما للحم نال رحيم</p>
+                        </div>
+                      </div>
+                      <div class="row flex-container no-wrap">
+                        <div class="verse-label">
+                          <h6>1:1</h6>
+                        </div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">بس ما لل هال<span class="var-highlight">ر نا</span>حم نالرح يم</p>
+                        </div>
+                      </div>
+                      <div class="row flex-container no-wrap">
+                        <div class="verse-label">
+                          <h6>1:1</h6>
+                        </div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">ل هالحم نال رحيم</p>
+                        </div>
+                      </div>
+                      <div class="row flex-container no-wrap">
+                        <div class="verse-label">
+                          <h6>1:1</h6>
+                        </div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">لل هالحم نال رحيم</p>
+                        </div>
+                      </div>
+                      <div class="row flex-container no-wrap">
+                        <div class="verse-label">
+                          <h6>1:1</h6>
+                        </div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">بسما لل هالحم نال رحيم</p>
+                        </div>
+                      </div>
+                        
+                    </div>
+                    <div class="read-more">
+                    	<button>Read More</button>
+                    </div>
+                </div>
+
+                <div class="varients-window sticky-window">
+                  <div class="flex-container align-top reading-header">
+                    <h5 class="letter-space">VARIENTS</h5>
+                  </div>
+                    <div class="varients">
+                      <div class="var-row flex-container">
+                        <div class="table-icon"><a><img src="imgs/play-button.svg"></a></div>
+                        <div class="table-icon img-button"><a><img src="imgs/img-button.svg"></a></div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar"><span class="var-selected">رما لل</span></p>
+                        </div>
+                        <div class="rounded blue-bg"><p>10K</p></div>
+                        <div class="table-icon info info-button"><img src="imgs/info-button.svg"></div>
+                      </div>
+
+                      <div class="var-row flex-container">
+                        <div class="table-icon"><a><img src="imgs/play-button.svg"></a></div>
+                        <div class="table-icon"></div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">الْـحَمْدُ لُلَّه ه الْـحَمْدُ لُلَّهالْ </p>
+                        </div>
+                        <div class="rounded purple-bg"><p>7</p></div>
+                        <div class="table-icon info info-button"><img src="imgs/info-button.svg"></div>
+                      </div>
+
+                      <div class="var-row flex-container">
+                        <div class="table-icon"><a><img src="imgs/play-button.svg"></a></div>
+                        <div class="table-icon img-button"><a><img src="imgs/img-button.svg"></a></div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">رما لل</p>
+                        </div>
+                        <div class="rounded hot-orange-bg"><p>10S</p></div>
+                        <div class="table-icon info info-button"><img src="imgs/info-button.svg"></div>
+                      </div>
+
+                      <div class="var-row flex-container">
+                        <div class="table-icon"><a><img src="imgs/play-button.svg"></a></div>
+                        <div class="table-icon"></div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">رما لل</p>
+                        </div>
+                        <div class="rounded royal-bg"><p>šdh</p></div>
+                        <div class="table-icon info info-button"><img src="imgs/info-button.svg"></div>
+                      </div>
+
+                      <div class="var-row flex-container">
+                        <div class="table-icon"><a><img src="imgs/play-button.svg"></a></div>
+                        <div class="table-icon"></div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">رما لل</p>
+                        </div>
+                        <div class="rounded gray-bg"><p>CDX</p></div>
+                        <div class="table-icon info info-button"><img src="imgs/info-button.svg"></div>
+                      </div>
+
+                      <div class="var-row flex-container">
+                        <div class="table-icon"><a><img src="imgs/play-button.svg"></a></div>
+                        <div class="table-icon"></div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">رما لل</p>
+                        </div>
+                        <div class="rounded drk-green-bg"><p>GR</p></div>
+                        <div class="table-icon info info-button"><img src="imgs/info-button.svg"></div>
+                      </div>
+
+                      <div class="var-row flex-container">
+                        <div class="table-icon"><a><img src="imgs/play-button.svg"></a></div>
+                        <div class="table-icon"></div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">رما لل</p>
+                        </div>
+                        <div class="rounded pink-bg"><p>TC</p></div>
+                        <div class="table-icon info info-button"><img src="imgs/info-button.svg"></div>
+                      </div>
+
+                      <div class="var-row flex-container">
+                        <div class="table-icon"><a><img src="imgs/play-button.svg"></a></div>
+                        <div class="table-icon"></div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">رما لل</p>
+                        </div>
+                        <div class="rounded hot-red-bg"><p>shii</p></div>
+                        <div class="table-icon info info-button"><img src="imgs/info-button.svg"></div>
+                      </div>
+
+                      <div class="var-row flex-container">
+                        <div class="table-icon"><a><img src="imgs/play-button.svg"></a></div>
+                        <div class="table-icon"></div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">رما لل</p>
+                        </div>
+                        <div class="rounded green-bg"><p>14</p></div>
+                        <div class="table-icon info info-button"><img src="imgs/info-button.svg"></div>
+                      </div>
+
+                      <div class="var-row flex-container">
+                        <div class="table-icon"><a><img src="imgs/play-button.svg"></a></div>
+                        <div class="table-icon"></div>
+                        <div class="results-text">
+                          <p dir="rtl" lang="ar">رما لل</p>
+                        </div>
+                        <div class="rounded blk-bg"><p>NS</p></div>
+                        <div class="table-icon info info-button"><img src="imgs/info-button.svg"></div>
+                      </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+<!--Modal Info------------------------------------------------------------------------------------------------------> 
+
+            <div id="popup-modal-info" class="hide-modal-info">
+            	<div id="x-modal-info"><img src="imgs/x-button.svg"></div>
+            	
+              <div class="info-popup">
+                
+                <div class="flex-container ">
+                  <div class="table-icon"><a><img src="imgs/play-button.svg"></a></div>
+                  <div class="results-text"><p dir="rtl" lang="ar">رما لل</p></div>
+                </div>
+                
+                <div class="popup-table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td class="flex-container">The Ten Readings Sughra<div class="rounded blue-bg"><p>10K</p></div></td>
+                    </tr>
+                   </tbody>
+                    <thead>
+                      <tr>
+                      <th>Type</th>
+                    </tr>
+                  </thead> 
+                  <tbody>
+                    <tr>
+                      <td>N/A</td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr>
+                      <th>Transliteration</th>
+                    </tr>
+                  </thead> 
+                  <tbody>
+                    <tr>
+                      <td>rabba</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                  <table>
+                  <thead>
+                    <tr>
+                      <th>Transmission</th>
+                      <th>Manual</th>
+                      <th>Page</th>
+                    </tr>
+                  </thead> 
+                  <tbody>
+                    <tr>
+                     <td>Zayd b. ʿAlī</td>
+                      <td>Name of Manual</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td>Zayd b. ʿAlī</td>
+                      <td>Name of Manual</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td>Zayd b. ʿAlī</td>
+                      <td>Name of Manual</td>
+                      <td>200</td>
+                    </tr>
+                  </tbody> 
+                </table>
+              </div>
+            	
+            </div>
+          </div>
+
+<!--Modal Photo------------------------------------------------------------------------------------------------------> 
+  
+    </main>
+
+<!--Footer------------------------------------------------------------------------------------------------------>     
+    <footer>
+    	<ul class="bottom-nav">
+    		<li><a>Encyclopedia</a></li>
+        <li><a>Resources</a></li>
+        <li><a>About</a></li>
+        <li><a>Contact</a></li>
+    	</ul>
+      <div class="credits"><p>© Shady Hekmat Nasser | Harvard Digital Humanities</p></div>
+    </footer>
+
+<!--Load JS------------------------------------------------------------------------------------------------------>       
+               
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine',
+      });
+    </script>
+
+
+
+
+<!--Restyle dropdowns------------------------------------------------------------------------------------------------------>   
+
+<script>
+var x, i, j, l, ll, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+</script>  
+
+
+
+
+</body>
+</html>
+
