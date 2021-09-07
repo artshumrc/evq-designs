@@ -13,6 +13,21 @@ $(document).ready(function () {
 
 
 
+
+
+    $('.img-button').click(function(){
+    $('#popup-modal-photo').addClass("view-modal-photo");
+    $('#popup-modal-photo').removeClass("hide-modal-photo");
+});
+
+    $('#x-modal-photo').click(function(){
+    $('#popup-modal-photo').addClass("hide-modal-photo");
+    $('#popup-modal-photo').removeClass("view-modal-photo");
+
+});
+
+
+
 	// List your words here:
     var words = [
         'ب سس',
@@ -31,9 +46,10 @@ $(document).ready(function () {
 
 // List your words here:
     var words = [
-        'ب',
+        'ب سس',
         'ب س',
         'س'
+        
         ], i = 0;
 
     setInterval(function(){
@@ -43,7 +59,13 @@ $(document).ready(function () {
        // 3 seconds
     }, 3000);
 
-    });
+
+
+
+
+
+
+});
 
 
 
