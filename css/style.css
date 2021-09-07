@@ -179,7 +179,17 @@ h6.email{
 }
 
 
-/* Logos -------------------------------------------*/
+/* Logos ----------------------------------------------------------------------------------- */
+.index-head{
+  height:90.5vh;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 5em;
+  background-color: black;
+  position: relative;
+  z-index: -1;
+}
 
 .index-head p#varient-logo {
   font-size: 17vw;
@@ -189,6 +199,7 @@ h6.email{
   padding:0;
   text-align: center;
 }
+
 
 .index-head p.subtitle {
   font-size: 1.2vw;
@@ -224,14 +235,28 @@ h6.email{
   min-width: 120px;
 }
 
+.logo-container-index p.subtitle-small {
+  font-size: 55px;
+  margin: -13px 0 0 0;
+  padding: 0 0.1em 0 0.2em;
+  line-height: 50px;
+  min-width: 60px;
+}
+
+
+.logo-container p.index-logo-v{
+  font-family: serif;
+}
+
+
 .logo-container hr  {
   border-bottom:3px solid var(--orange);
   margin: 0 0em 0 0.5em;
 }
 
-.logo-container p.index-logo-v{
-  font-family: serif;
-}
+
+
+
 
 /* Navigation -------------------------------------------------------------------------------- */
 
@@ -349,17 +374,6 @@ footer {
 
 header {
 	padding-top:5em;
-}
-
-.index-head{
-  height:90.5vh;
-  width: 100%;
-  justify-content: center;
-  align-content: center;
-  padding-bottom: 5em;
-  background-color: black;
-  position: relative;
-  z-index: -1;
 }
 
 .container-article {
@@ -517,7 +531,8 @@ main.ency-container {
 
 
 
-/* Dropdown Pills Customs Style ------------------------------------------------------------------------------------ */
+
+/* Dropdown Pills Customs Style -------------------------------------------------------------------- */
 .custom-select{
   padding:0 0.5em;
 }
@@ -621,17 +636,9 @@ main.ency-container {
 
 .switch-title {
   font-size: 0.8em;
-  padding: 0.31em 0.7em;
+  padding: 0.31em 0.5em;
   text-transform: uppercase;
   letter-spacing: 0.02em;
-}
-
-.switch-title a{
-  color: black;
-}
-
-.switch-container{
-  padding-right: 5px;
 }
 
 .switch {
@@ -787,7 +794,7 @@ button {
 
 
 
-/* varient markers-principle-markers------------------------------------------------------------------------------- */
+/* varient markers-principle-markers---------------------------------------------------------------- */
 
 .sticky-window{
   position: -webkit-sticky;
@@ -845,18 +852,17 @@ border-bottom: 2px solid var(--hot-red);
 /* varient results---------*/
 
 .varients{
-  height: 65vh;
+  height: 50vh;
    overflow: scroll;
-   padding-right:1em;
-   padding-bottom: 20px !important;
 }
 
 .principles{
   height: auto;
-   overflow: scroll;
-   padding-right:0em;
+  overflow: scroll;
 }
 
+
+/* varient results----do we need this scroll bar?
 .varients::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 7px;
@@ -866,7 +872,7 @@ border-bottom: 2px solid var(--hot-red);
   border-radius: 4px;
   background-color: black;
 }
-
+---*/
 
 .varients-window .flex-container{
   justify-content: space-between;
@@ -907,7 +913,7 @@ border-bottom: 2px solid var(--hot-red);
 
 
 
-/* Tabular View-----------------*/
+/* Tabular View-------------------------------------------------------------------------------------- */
 
 .tabular-results-window{
   width: 100%;
@@ -1037,7 +1043,7 @@ td{
 }
 
 
-/* selections markers --------------------------------------------------------- */
+/* selections markers --------------------------------------------------------------------- */
 
 .selection-markers {
   color: white;
@@ -1093,7 +1099,7 @@ td{
     transform:rotate(-45deg);
 }
 
-/* Pagination --------------------------------------------------------- */
+/* Pagination ------------------------------------------------------------------------------ */
 
 .pagination {
   display: inline-block;
@@ -1116,19 +1122,19 @@ td{
 
 
 
-/* PopUp Modals ---------------*/
+/* PopUp Modals --------------------------------------------------------------------------- */
 
-#popup-modal-info{
+#popup-modal-info, #popup-modal-photo {
   background-color: rgba(0, 0, 0, 0.8);
   height: 100vh;
   width: 100vw;
   z-index: 999;
-  position: fixed;
+  position:fixed;
   top:0;
   left:0;
 }
 
-.info-popup{
+.info-popup {
   width: 600px;
   background-color: white;
   position: relative;
@@ -1138,22 +1144,35 @@ td{
   padding-bottom: 30px;
 }
 
-#x-modal-info{
+.photo-popup{
+  width: 80vw;
+  top:5vh;
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
+  padding: 1vw;
+}
+
+
+#x-modal-info, #x-modal-photo{
   color: white;
   width: 30px;
   position: fixed;
   top:15px;
   right:24px;
+  z-index: 999999;
 }
 
-.view-modal-info{
+.view-modal-info, .view-modal-photo{
   display: block;
 }
 
-.hide-modal-info{
+.hide-modal-info, .hide-modal-photo{
   display: none;
 }
 
+
+/* modal table----------*/
 #popup-modal-info
 tbody tr:nth-child(odd) {
     background-color: #F2F4F6;
@@ -1183,7 +1202,7 @@ tbody tr:nth-child(odd) {
 
 
 
-/* News-----------------*/
+/* News----------------------------------------------------------------------------------------- */
 
 h1.index-title {
   padding: 2em 0 0.5em;
@@ -1223,7 +1242,7 @@ h1.index-title {
 }
 
 
-/* About---------------------------------------*/
+/* About------------------------------------------------------------------------------------------- */
 .name {
 
 }
@@ -1235,7 +1254,7 @@ h1.index-title {
 
 
 
-/* Index style---------------------------------------*/
+/* Index style----------------------------------------------------------------------------------- */
 
 .sponsor-pill {
   display: flex;
@@ -1261,12 +1280,12 @@ h1.index-title {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border:2px black solid;
-
 }
 
 .encyc-pill h5{
   color: black;
   padding: 0.5em 0;
+  font-size: 0.9em;
 }
 
 .encyc-pill:hover{
@@ -1394,233 +1413,8 @@ h1.index-title {
 /* MEDIA QUERIES------------------------------------------------------------------------------ */
 @media only screen and (max-width: 1000px){	
 
-.main.ency-container{
-  max-width: 99vw;
-}
 
-.container-narrow, .container-wide {
-	padding: 4em 4em 3em;
-}
-
-.results-window{
-  width: 55%;
- padding: 4em 0em 0 0em;
-}
-
-.varients-window {
-    width: 45%;
-    padding: 4em 0em 0 2em;
-}
-
-
-
-/* News-----------------*/
-
-.news-pill h6{
-  letter-spacing: 0.05em;
-  padding: 2em 0 0em;
-}
-
-.news-pill h4{
-  font-size: 1.8em;
-  line-height: 1.3em;
-  padding: 0.5em 1em 1.25em;
-}
-
-.sponsor-pill{
-  flex-wrap: wrap;
-}
-
-.sponsor-pill img{
-  width: 50%;
-}
-
-
-/* Article --------*/
-
-.container-article {
-    padding: 0em 4em 3em;
-}
-
-.container-article h1{
-  font-size: 3em;
-  text-align: center;
-}
-
-.container-article .image-cropper{
-  width: 220px !important;
-  margin: 0 auto;
-}
-
-.container-article .attribution{
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  padding: 2em 0 ;
-}
-
-
-
-/* Reading View Menu -----------------------*/
-
-.custom-select{
-    padding: 0.5em 0em;
-}
-
-/*style the arrow inside the select element:*/
-.select-selected:after {
-  top: 19px;
-  right: 10px;
-}
-
-/*point the arrow upwards when the select box is open (active):*/
-.select-selected.select-arrow-active:after {
-  top: 24px;
-}
-
-/*style items (options):*/
-.select-items {
-  margin-top: -5px;
-}
-
-
-.switch-container{
-  width: 100%;
-  height: 3em;
-}
-
-/* adjust headshots -----------------------*/
-.image-three-column{
-  width: 50%;
-}
-
-
-}
-
-
-
-
-@media only screen and (max-width: 768px){	
-
-.sticky-menu{
-  position: -webkit-static;
-  position: static;
-}
-
-.tabular-results-window{
-  padding: 1.5em 1em 0 ;
-}
-
-.selection-container {
-    max-width: 98vw;
-  }
-
-
-.results-window{
-  width: 100%;
- padding: 4em 1em 0 ;
-}
-
-.results, .varients{
-  height: 30vh;
-  overflow: scroll;
-}
-
-.varients-window {
-    width: 100%;
-    padding: 4em 0em 0 0em;
-}
-
-.sticky-window {
-    position: -webkit-static;
-    position: static;
-    top: 90px;
-}
-
-
-.info-popup{
-  width: 90%;
-  top:10%;
-  margin: 0 auto;
-}
-
-
-
-
-
-
-/* widths -------------------------------------------*/
-
-header{
-  padding-top: 2em;
-}
-
-.container-narrow, .container-wide {
-  padding: 3em 2.5em 3em;
-}
-
-.three-column, .two-column, .grow-one, .grow-two, .grow-three, .five-column, .four-column, .image-three-column{
-	width: 100%;
-	flex-grow: 0;
-}	
-
-/* fonts -------------------------------------------*/
-h1.page-title {
-  font-size: 2.75em;
-}
-
-
-h1.ency-title{
-  font-size: 2.75em;
-   padding: 1em 0 0em 0;
-}
-
-h5{
-  font-size: 0.9em;
-}
-
-
-/* Index---*/
-.encyc-pill {
-    width: 100%;
-}
-
-.news-pill {
-    padding: 0.3em 0.8em 0.35em;
-}
-
-.news-pill h6 {
-  font-size: 0.8em;
-}
-
-.news-pill h4 {
-    font-size: 1.4em;
-}
-
-
-/* Logos -------------------------------------------*/
-
-.index-head p#varient-logo {
-  margin-top:0.1em;
-}
-
-.index-logo{
-  position: absolute;
-}
-
-.index-head p.subtitle {
-position: relative;
-width: 57vw;
-font-size: 2.5vw
-}
-
-.logo-left{
-  left:2px;
-}
-
-.logo-right{
-  right:0px;
-}
+/* menu button ----------------------------------------------------------------------------- */
 
 .nav-container{
   flex-wrap: wrap;
@@ -1629,30 +1423,9 @@ font-size: 2.5vw
 
 .logo-container {
   position: absolute;
-  top:10px;
-  left:20px;
+  top:14px;
+  left:25px;
 }
-
-.logo{
-  font-size: 45px;
-  line-height: 1em;
-}
-
-.logo-container p.subtitle-small {
-  font-size: 38px;
-  padding: 0 0em 0 0.2em;
-  padding-bottom: 10px;
-}
-
-
-
-/* Index -------------------------------------------*/
-
-
-
-
-
-/* menu button ----------------------------------------------------------------------------- */
 
 .menu {
   clear: both;
@@ -1781,6 +1554,287 @@ color: var(--orange);
 }
 
 
+/* Widths-----------------*/
+
+
+.main.ency-container{
+  max-width: 99vw;
+}
+
+.container-narrow, .container-wide {
+	padding: 4em 4em 3em;
+}
+
+.results-window{
+  width: 55%;
+ padding: 4em 0em 0 0em;
+}
+
+.varients-window {
+    width: 45%;
+    padding: 4em 0em 0 2em;
+}
+
+
+
+/* News-----------------*/
+
+.news-pill h6{
+  letter-spacing: 0.05em;
+  padding: 2em 0 0em;
+}
+
+.news-pill h4{
+  font-size: 1.8em;
+  line-height: 1.3em;
+  padding: 0.5em 1em 1.25em;
+}
+
+.sponsor-pill{
+  flex-wrap: wrap;
+}
+
+.sponsor-pill img{
+  width: 50%;
+}
+
+
+/* Article --------*/
+
+.container-article {
+    padding: 0em 4em 3em;
+}
+
+.container-article h1{
+  font-size: 3em;
+  text-align: center;
+}
+
+.container-article .image-cropper{
+  width: 220px !important;
+  margin: 0 auto;
+}
+
+.container-article .attribution{
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  padding: 2em 0 ;
+}
+
+
+
+
+/* adjust headshots -----------------------*/
+.image-three-column{
+  width: 50%;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 870px){  
+
+.switch-container{
+  height: 3em;
+  margin:0 auto;
+}
+
+
+}
+
+/* MEDIA QUERIES--MOBILE---------------------------------------------------------------------------- */
+@media only screen and (max-width: 768px){	
+
+.sticky-menu{
+  position: -webkit-static;
+  position: static;
+}
+
+.tabular-results-window{
+  padding: 1.5em 1em 0 ;
+}
+
+.selection-container {
+    max-width: 98vw;
+  }
+
+
+.results-window{
+  width: 100%;
+ padding: 1.25em 0 0 ;
+}
+
+.results, .varients{
+  max-height: 32vh;
+  overflow: scroll;
+}
+
+.varients-window {
+    width: 100%;
+    padding: 2em 0em 0 0em;
+}
+
+
+.results, .varients, .verse{
+ margin: 0.1em 0;;
+}
+
+.table-container{
+  padding-top: 2em;
+}
+
+.sticky-window {
+    position: -webkit-static;
+    position: static;
+    top: 90px;
+}
+
+.info-popup{
+  width: 90%;
+  top:10%;
+  margin: 0 auto;
+}
+
+
+
+
+/* widths -------------------------------------------*/
+
+header{
+  padding-top: 2em;
+}
+
+.container-narrow, .container-wide {
+  padding: 2.5em 1.5em 3em;
+}
+
+.container-article {
+    padding: 0em 1.5em 3em;
+}
+
+.three-column, .two-column, .grow-one, .grow-two, .grow-three, .five-column, .four-column, .image-three-column{
+	width: 100%;
+	flex-grow: 0;
+}	
+
+/* fonts -------------------------------------------*/
+h1.page-title {
+  font-size: 12vw;
+}
+
+h1.mobile-index-title{
+  font-size: 10vw;
+}
+
+
+h1.ency-title{
+  font-size: 2.75em;
+   padding: 0em 0 0em 0;
+}
+
+h5{
+  font-size: 0.9em;
+}
+
+.reading-header h5 {
+  font-size: 1.1em;
+  margin: 0 auto;
+  padding-right: 0em;
+
+}
+
+/* arabic -------------------------------------------*/
+
+.results p, .varients p, .verse p{
+  font-size: 1.75em;
+  margin:0;
+}
+
+
+/* pill menu -------------------------------------------*/
+
+.custom-select{
+  margin-bottom: 15px;
+}
+
+/* Index---------------------*/
+.encyc-pill {
+    width: 100%;
+}
+
+.news-pill {
+    padding: 0.3em 0.8em 0.35em;
+}
+
+.news-pill h6 {
+  font-size: 0.8em;
+}
+
+.news-pill h4 {
+    font-size: 1.4em;
+}
+
+
+/* Logos -------------------------------------------*/
+.index-head{
+  padding-bottom: 9em;
+  height: 85vh
+}
+
+.index-head p#varient-logo {
+  margin-top:-0.08em;
+}
+
+.index-logo{
+  position: absolute;
+}
+
+.index-head p.subtitle {
+position: relative;
+width: 57vw;
+font-size: 2.5vw
+}
+
+.logo-left{
+  left:2px;
+}
+
+.logo-right{
+  right:0px;
+}
+
+.nav-container{
+  flex-wrap: wrap;
+  padding: 0em 0em;
+}
+
+.logo-container {
+  position: absolute;
+  top:10px;
+  left:20px;
+}
+
+.logo{
+  font-size: 45px;
+  line-height: 1em;
+}
+
+.logo-container p.subtitle-small {
+  font-size: 38px;
+  padding: 0 0em 0 0.2em;
+  padding-bottom: 10px;
+}
+
+.logo-container-index p.subtitle-small {
+  font-size: 45px ;
+  margin: -4px 0 0 0;
+  line-height: 20px;
+  min-width: 60px;
+}
+
 
 
 
@@ -1789,11 +1843,11 @@ color: var(--orange);
 
 
 .bottom-nav {
-  padding: 0.5em 1em;
+  padding: 0.5em 1em  0.6em;
 }
 
 .bottom-nav li{
-  font-size: 0.7em;
+  font-size: 2.5vw;
 }
 
 
