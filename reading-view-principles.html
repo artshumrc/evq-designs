@@ -7,9 +7,12 @@
 
   		<title>Electronic Readings of The Qur’an</title>
 
-  		<link rel="stylesheet" href="css/style.css" media="screen">
-  		<link rel="stylesheet" href="css/aos.css" media="screen">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="css/style.css" media="screen">
+      <link rel="stylesheet" href="css/aos.css" media="screen">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+      <script src="sss/sss.min.js"></script>
+      <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+      <script>jQuery(function($) {$('.slider').sss();});</script>
 
 	</head>
 
@@ -108,13 +111,12 @@
     <main class="ency-container">    
             <div class="reading-results flex-container align-top">
                 
-                <!--slider buttons----------------------------------->   
+                 <!--slider buttons----------------------------------->   
                 <div class="results-window"> 
                     <div class="flex-container align-top reading-header">
-                      <h5 class="letter-space">RESULTS</h5>
                       
                       <div class="switch-container flex-container">
-                        <h5 class="switch-title left-title">Hide Vowels</h5>
+                        <h6 class="switch-title left-title">Hide Vowels</h6>
                         <div class="switch">
                           <input type="radio" class="switch-input" name="view" value="show" id="show" checked>
                           <label for="show" class="switch-label switch-label-off">x</label>
@@ -122,11 +124,11 @@
                           <label for="hide" class="switch-label switch-label-on">x</label>
                           <span class="switch-selection"></span>
                         </div>
-                        <h5 class="switch-title right-title">Show Vowels</h5>
+                        <h6 class="switch-title right-title">Show Vowels</h5>
                       </div>  
                       
                       <div class="switch-container flex-container">
-                        <h6 class="switch-title left-title"><a href="reading-view.html">Varients</a></h6>
+                        <h6 class="switch-title left-title">Varients</h6>
                         <div class="switch">
                           <input type="radio" class="switch-input" name="view2" value="show2" id="show2" checked>
                           <label for="show2" class="switch-label switch-label-off">x</label>
@@ -134,9 +136,12 @@
                           <label for="hide2" class="switch-label switch-label-on">x</label>
                           <span class="switch-selection"></span>
                         </div>                      
-                        <h6 class="switch-title right-title"><a href="reading-view-principles.html">Principles</a></h6>
+                        <h6 class="switch-title right-title">Principles</h6>
                       </div>
                     </div>  
+                    
+
+                    <!--Verses----------------------------------->    
 
                     <div class="results">
                       <div class="row flex-container no-wrap">

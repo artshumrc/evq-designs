@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="author" content="">
-  		<meta name="description" content="">
-  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta name="author" content="">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  		<title>Electronic Readings of The Qur’an</title>
+      <title>Electronic Readings of The Qur’an</title>
 
-  		<link rel="stylesheet" href="css/style.css" media="screen">
-  		<link rel="stylesheet" href="css/aos.css" media="screen">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	</head>
+      <link rel="stylesheet" href="css/style.css" media="screen">
+      <link rel="stylesheet" href="css/aos.css" media="screen">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+      <script src="sss/sss.min.js"></script>
+      <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+      <script>jQuery(function($) {$('.slider').sss();});</script>
 
 
-	<body>
+  </head>
 
+
+  <body>
 <!--Nav Section-------------------------------------------------------------------------------------------------------------> 
     <!--logo----------->
      <div class="nav-container" id="navbar">
@@ -22,7 +26,7 @@
           <a class="flex-container" href="index.html">
             <h1 class="logo">E</h1>
             <div>
-              <p class="subtitle-small index-logo-v" >v</p>
+              <p id="varient-logo-small" class="subtitle-small" dir="rtl" lang="ar">ب سم</p>
               <hr>
             </div>
             <h1 class="logo">Q</h1>
@@ -68,7 +72,7 @@
     <div class="index-head flex-container">
         <h4 class="index-logo logo-left" data-aos="fade-in">E</h4>
         <div class="varient-logo-container" data-aos="fade-in">
-            <p id="varient-logo">ب س</p>
+            <p id="varient-logo"> س </p>
             <p class="subtitle">Encyclopedia of the Variant Readings of the Qur’an</p>
         </div>
         <h4 class="index-logo logo-right" data-aos="fade-in">Q</h4>
@@ -82,7 +86,7 @@
       <div class="container-wide">
 
 
-        <h1 class="page-title blk index-title" data-aos="fade-in">ENCYCLOPEDIAS</h1>
+        <h1 class="page-title blk index-title mobile-index-title" data-aos="fade-in">ENCYCLOPEDIAS</h1>
           <div class="flex-container center-container">
             <div class="news-pill encyc-pill">
               <a href=""><h5>Reading View</h5></a>
@@ -140,13 +144,15 @@
 
 <!--Load JS------------------------------------------------------------------------------------------------------>       
                
-    <script src="js/aos.js"></script>
+        <script src="js/aos.js"></script>
     <script src="js/script.js"></script>
     <script>
       AOS.init({
-        easing: 'ease-in-out-sine',
+        easing: 'ease-in-out-sine'
       });
     </script>
+
+
 	</body>
 </html>
 
