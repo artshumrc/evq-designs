@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="author" content="">
-  		<meta name="description" content="">
-  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta name="author" content="">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  		<title>Electronic Readings of The Qur’an</title>
+      <title>Electronic Readings of The Qur’an</title>
 
       <link rel="stylesheet" href="css/style.css" media="screen">
       <link rel="stylesheet" href="css/aos.css" media="screen">
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-      <script src="sss/sss.min.js"></script>
-      <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
-      <script>jQuery(function($) {$('.slider').sss();});</script>
 
-	</head>
+  </head>
 
 
-	<body>
+    <body>
 
-<!--Nav Section-------------------------------------------------------------------------------------------------------------> 
+<!--Nav Section-------------------------------------------------------------------------------------------------> 
     <!--logo----------->
      <div class="nav-container" id="navbar">
         <div class="logo-container">
@@ -39,20 +35,20 @@
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-                <li class="category-name">ENCYCLOPEDIA
+                <li class="category-name"><a>ENCYCLOPEDIA</a>
                     <ul class="dropdown">
-                        <li class="page-link"><a href="reading-view.html">Reading View</a></li>
-                        <li class="page-link"><a href="tabular-view.html">Advanced: Varients</a></li>
+                        <li class="page-link"><a href="reading-view-varients.html">Reading View</a></li>
+                        <li class="page-link"><a href="tabular-view-varients.html">Advanced: Varients</a></li>
                         <li class="page-link"><a href="tabular-view-principles.html">Advanced: Principles</a></li>
                     </ul>
                 </li>
-                <li class="category-name">RESOURCES
+                <li class="category-name"><a>RESOURCES</a>
                     <ul class="dropdown">
                         <li class="page-link"><a href="related-articles.html">Related Articles</a></li>
                         <li class="page-link"><a href="related-videos.html">Related Videos</a></li>
                     </ul>
                 </li>
-                <li class="category-name">ABOUT
+                <li class="category-name"><a>ABOUT</a>
                     <ul class="dropdown">
                         <li class="page-link"><a href="about.html">About EVQ</a></li>
                         <li class="page-link"><a href="using-the-site.html">Using the Site</a></li>
@@ -64,7 +60,8 @@
         </nav>
     </div>
 
-<!--Header Section-------------------------------------------------------------------------------------------------------------> 
+    
+<!--Header Section----------------------------------------------------------------------------------------------> 
     <header class="blk-bg">
         <h1 class="page-title" data-aos="fade-in">CONTACT US</h1>
     </header>
@@ -88,29 +85,24 @@
       
     </main>  
       
-<!--Footer------------------------------------------------------------------------------------------------------>     
+<!--Footer------------------------------------------------------------------------------------------------------->     
     <footer>
-      <ul class="bottom-nav">
-        <li><a>Encyclopedia</a></li>
-        <li><a>Resources</a></li>
-        <li><a>About</a></li>
-        <li><a>Contact</a></li>
-      </ul>
       <div class="credits"><p>© Shady Hekmat Nasser | Harvard Digital Humanities</p></div>
-    </footer>
+    </footer>  
                
 
 <!--Load JS------------------------------------------------------------------------------------------------------>       
                
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
     <script src="js/aos.js"></script>
     <script src="js/script.js"></script>
     <script>
       AOS.init({
-        easing: 'ease-in-out-sine',
+        easing: 'ease-in-out-sine'
       });
     </script>
 
 
-	</body>
+    </body>
 </html>
 

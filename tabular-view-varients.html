@@ -63,29 +63,50 @@
     
 <!--Header Section---------------------------------------------------------------------------------------------->
     <header class="blk-bg">
-        <h1 class="ency-title" data-aos="fade-in">Tabular View: Principles</h1>
+        <h1 class="ency-title" data-aos="fade-in">Tabular View: Varients</h1>
     </header>
 
 <!--Dropdown pills Section------------------------------------------------------------------------------------->     
     <div class="sticky-menu">
       <div class="selection-container flex-container">
           
-          <div class="custom-select two-column">  
+          <div class="custom-select five-column">  
               <div class="ui fluid multiple search selection selection-dropdown selection-box">
               <input type="hidden" name="chapter">
               <div class="default text">Select Chapter</div>
             </div>    
           </div>
 
-          <div class="custom-select two-column">  
+          <div class="custom-select five-column">  
               <div class="ui fluid multiple search selection selection-dropdown selection-box">
-              <input type="hidden" name="principles">
-              <div class="default text">Principle</div>
+              <input type="hidden" name="verses">
+              <div class="default text">Select Verse</div>
             </div>    
           </div>
 
-        </div>
+          <div class="custom-select five-column">  
+              <div class="ui fluid multiple search selection selection-dropdown selection-box">
+              <input type="hidden" name="type">
+              <div class="default text">Select Type</div>
+            </div>    
+          </div>
 
+          <div class="custom-select five-column">  
+              <div class="ui fluid multiple search selection selection-dropdown selection-box">
+              <input type="hidden" name="Transmission">
+              <div class="default text">Select Transmission</div>
+            </div>    
+          </div>
+
+          <div class="custom-select five-column">  
+              <div class="ui fluid multiple search selection selection-dropdown selection-box">
+              <input type="hidden" name="Manual">
+              <div class="default text">Select Manual</div>
+            </div>    
+          </div>
+      
+
+        </div>
     
 
         <!--Selection Markers -----------------------------------> 
@@ -113,7 +134,7 @@
 
   
             
-<!--Main Results area-------------------------------------------------------------------------------------------> 
+ <!--Main Results area------------------------------------------------------------------------------------------> 
     <main class="ency-container tabular-results-window">              
 
         <h5 class="results-title verse-ref-title">VERSE REFERENCE</h5>
@@ -126,8 +147,8 @@
                     <p dir="rtl" lang="ar">بسما لل <span class="var-highlight">هالرما</span> للحم نال رحيم</p>
                   </div>
                   <div class="verse-icons">
-                    <a><img src="imgs/arrow-button-up.svg"></a>
-                    <a><img src="imgs/arrow-button-down.svg"></a>
+                    <a class="verse-icon-top"><img src="imgs/arrow-button-up.svg"></a>
+                    <a class="verse-icon-bottom"><img src="imgs/arrow-button-down.svg"></a>
                   </div>
               </div>
           </div>
@@ -138,31 +159,64 @@
                     <tr>
                       <th>Text</th>
                       <th>Arabic</th>
-                      <th>Principle</th>
+                      <th></th>
+                      <th>Transliteration</th>
+                      <th>Status</th>
+                      <th>Type</th>
+                      <th>Transmission</th>
+                      <th>Manual</th>
+                      <th>PG</th>
+                      <th>Media</th>
+                      <th>Info</th>
                     </tr>
                   </thead> 
                   <tbody>
                     <tr>
                       <td class="table-number">1:1</td>
+                      <td class="table-audio"><div class="table-icon"><a><img src="imgs/play-button.svg"></a></div></td>
                       <td class="table-arabic" dir="rtl" lang="ar"><span class="var-highlight">هالرما</span></td>
-                      <td class="table-principle"><div class="rounded blk-bg"><p>NS</p></div>Principle Name</td>
+                      <td class="table-longer">‿r-raḥīmu</td>
+                      <td class="table-status"><div class="rounded blk-bg"><p>NS</p></div></td>
+                      <td class="table-longer">iʿrāb</td>
+                      <td class="table-longer">transmission name</td>
+                      <td class="table-longer">Manual Name</td>
+                      <td class="table-number">12</td>
+                      <td class="table-img"><div class="table-icon img-button"><a><img src="imgs/img-button.svg"></a></div></td>
+                      <td class="table-img"><div class="table-icon info info-button"><img src="imgs/info-button.svg"></div></td>
                     </tr>
 
                     <tr>
                       <td class="table-number">1:1</td>
+                      <td class="table-audio"><div class="table-icon"><a><img src="imgs/play-button.svg"></a></div></td>
                       <td class="table-arabic" dir="rtl" lang="ar">هاللرما</td>
-                      <td class="table-principle"><div class="rounded royal-bg"><p>PAW</p></div>Principle Name</td>
+                      <td class="table-longer">‿r-raḥīmu</td>
+                      <td class="table-status"><div class="rounded royal-bg"><p>PAW</p></div></td>
+                      <td class="table-longer">iʿrāb</td>
+                      <td rowspan="2" class="table-longer">transmission name</td>
+                      <td class="table-longer">Manual Name</td>
+                      <td class="table-number">12</td>
+                      <td class="table-img"><div class="table-icon img-button"><a><img src="imgs/img-button.svg"></a></div></td>
+                      <td class="table-img"><div class="table-icon info info-button"><img src="imgs/info-button.svg"></div></td>
                     </tr>
                     
                     <tr>
                       <td class="table-number">1:1</td>
+                      <td class="table-audio"><div class="table-icon"><a><img src="imgs/play-button.svg"></a></div></td>
                       <td class="table-arabic" dir="rtl" lang="ar">هاللرما</td>
-                      <td class="table-principle"><div class="rounded pink-bg"><p>10K</p></div>Principle Name</td>
+                      <td class="table-longer">‿r-raḥīmu</td>
+                      <td class="table-status"><div class="rounded pink-bg"><p>10K</p></div></td>
+                      <td class="table-longer">iʿrāb</td>
+
+                      <td class="table-longer">Manual Name</td>
+                      <td class="table-number">12</td>
+                      <td class="table-img"><div class="table-icon img-button"><a><img src="imgs/img-button.svg"></a></div></td>
+                      <td class="table-img"><div class="table-icon info info-button"><img src="imgs/info-button.svg"></div></td>
                     </tr>
                      
                   </tbody> 
                 </table>
 
+                 <!--pagination-------------->
                 <div class="pagination">
                     <a href="#">  &larr;</a>
                     <a href="#">1</a>
@@ -184,7 +238,7 @@
     </main>
 
 
-
+    
 <!--Footer------------------------------------------------------------------------------------------------------->     
     <footer>
       <div class="credits"><p>© Shady Hekmat Nasser | Harvard Digital Humanities</p></div>
@@ -204,8 +258,5 @@
 
 
 
-
-
 </body>
 </html>
-
