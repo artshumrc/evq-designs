@@ -192,7 +192,7 @@ h6.email{
 }
 
 .index-head p#varient-logo {
-  font-size: 17vw;
+  font-size: 15vw;
   color: white;
   margin:0;
   margin-top:-0.55em;
@@ -338,35 +338,13 @@ footer {
   min-height: 200px;
   margin-top: 100px;
   text-align: center;
-  padding-bottom: 1.5em;
+  padding: 1.5em 0;
 }
-
-.bottom-nav {
-	padding: 0.5em 3em;
-  margin-top: 2em;
-  border-radius: 50px;
-  border: 2px solid white;
-  display: inline-block;
-}
-
-.bottom-nav li{
-	display: inline-block;
-	padding: 0.25em 1em;
-	text-transform: uppercase;
-	letter-spacing: 0.06em;
-  font-size: 0.75em;
-}
-
-.bottom-nav li a{
-  color:white;
-}
-
 
 .credits p{
   text-align: center;
   font-size: 0.75em;
   font-family: 'Whyte-Light';
-  margin-top: 6em;
 
 }
 
@@ -448,7 +426,7 @@ main.ency-container {
 }
 
 .two-column{
-	width: 66%;
+	width: 50%;
 }
 
 .grow-one{
@@ -463,7 +441,7 @@ main.ency-container {
 .sticky-menu{
   position: -webkit-sticky;
   position: sticky;
-  top: -24px;
+  top: -2px;
   background-color: black;
   z-index: 999;
 }
@@ -532,42 +510,75 @@ main.ency-container {
 
 
 
+
+
+
+
+
 /* Dropdown Pills Customs Style -------------------------------------------------------------------- */
-.custom-select{
-  padding:0 0.5em;
-}
+
 
 .selection-container {
 	justify-content: space-between;
-	padding: 2em;
-  max-width: 93vw;
+	padding: 1.5em 2em 1em;
+  max-width: 95vw;
   margin:0 auto;
 }
 
- .selection-box {
-	width: 100%;
-}
-
-.custom-select {
+.selection-container .custom-select{
   position: relative;
   font-size: 0.9em;
 }
 
-.custom-select select {
-  display: none; 
-}
-
-.select-selected {
+ .selection-container .selection-box {
+	width: 100%;
   background-color: white;
   border-radius: 50px;
+  border: 2px solid black;
+  position: relative;
 }
 
+ .selection-container .text {
+  padding: 0.7em 1em 0.5em ;
+  }
+
+.selection-container .selection-menu{
+  background-color: white;
+  position: absolute;
+  width: 99%;
+  margin-left: 1%;
+  margin-top: 0.25em;
+  border-radius: 15px;
+  border:1px solid black;
+  overflow: scroll;
+}
+
+.selection-container .selection-menu .item{
+  border-bottom:1px solid #F2F4F6;
+  padding: 0.6em 0em 0.5em 0.8em;
+}
+
+.selection-container .selection-menu .selected{
+  background-color: var(--orange);
+  border-bottom: var(--orange);
+}
+
+.selection-container b{
+  font-size: 0.85em;
+  font-family: 'Whyte-Light';
+  color: white;
+  margin-left:0;
+  padding:0.1em 0.5em;
+  }
+
+
+
 /*style the arrow inside the select element:*/
-.select-selected:after {
+.selection-container .selection-box:after {
   position: absolute;
   content: "";
-  top: 9px;
-  right: 15px;
+  top: 10px;
+  right: 0.5em;
   width: 0;
   border: solid black;
   border-width: 0 2px 2px 0;
@@ -576,46 +587,6 @@ main.ency-container {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   margin-right:0.9em;
-}
-
-/*point the arrow upwards when the select box is open (active):*/
-.select-selected.select-arrow-active:after {
-	top: 14px;
-	transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-
-.select-items div,.select-selected {
-  color: black;
-  padding: 5px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-  user-select: none;
-}
-
-
-/*style items (options):*/
-.select-items {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  margin-top: 5px;
-  border: 1px solid black;
-  border-radius: 15px;
-  background-color: white;
-  overflow: hidden;
-}
-
-/*hide the items when the select box is closed:*/
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover, .same-as-selected {
-  background-color: var(--orange);
 }
 
 
@@ -1001,11 +972,12 @@ td{
    padding: 0.5rem;
 }
 
-.table-status, .table-principle{
+.table-status, .table-principle .rounded{
   width: 10%;
   text-align: center;
-  font-size: 11px;
-  width: auto;
+  font-size: 12px;
+  margin-top: 0.3em;
+  float: left;
 }
 
 .table-principle{
@@ -1134,6 +1106,12 @@ td{
   left:0;
 }
 
+#popup-modal-photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .info-popup {
   width: 600px;
   background-color: white;
@@ -1146,14 +1124,56 @@ td{
 
 .photo-popup{
   width: 80vw;
-  top:5vh;
-  background-color: white;
+  background-color: transparent;
   position: relative;
-  margin: 0 auto;
-  padding: 1vw;
+}
+
+/* Carousel Styles ----------------------------------------------------------------*/
+.main-carousel {
+  width: 100%;
+}
+
+.carousel-cell {
+  width: 100%; 
+}
+
+.carousel-cell .caption{
+  text-align: center;
+  color: white;
+}
+
+.carousel-cell img {
+  margin:0;
+  width: 100%;
+}
+
+/* button styles */
+.flickity-button {
+    position: absolute;
+    background: white;
+    border: 2px solid black;
+  }
+
+
+.flickity-prev-next-button {
+  width: 20px;
+  height: 40px;
+  border-radius: 80px;
+  padding: 20px;
+}
+
+.flickity-button-icon {
+  fill: black;
+}
+
+.flickity-page-dots{
+  display: none;
 }
 
 
+
+
+/* View / Hide ----------------------------------------------------------------*/
 #x-modal-info, #x-modal-photo{
   color: white;
   width: 30px;
@@ -1170,6 +1190,9 @@ td{
 .hide-modal-info, .hide-modal-photo{
   display: none;
 }
+
+
+
 
 
 /* modal table----------*/
@@ -1411,7 +1434,7 @@ h1.index-title {
 
 
 /* MEDIA QUERIES------------------------------------------------------------------------------ */
-@media only screen and (max-width: 1000px){	
+@media only screen and (max-width: 1025px){	
 
 
 /* menu button ----------------------------------------------------------------------------- */
@@ -1653,6 +1676,11 @@ color: var(--orange);
   position: static;
 }
 
+.sticky-verse{
+  position: relative;
+  top: 0;
+}
+
 .tabular-results-window{
   padding: 1.5em 1em 0 ;
 }
@@ -1722,13 +1750,8 @@ header{
 
 /* fonts -------------------------------------------*/
 h1.page-title {
-  font-size: 12vw;
-}
-
-h1.mobile-index-title{
   font-size: 10vw;
 }
-
 
 h1.ency-title{
   font-size: 2.75em;
@@ -1757,7 +1780,7 @@ h5{
 /* pill menu -------------------------------------------*/
 
 .custom-select{
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 /* Index---------------------*/
@@ -1835,6 +1858,13 @@ font-size: 2.5vw
   min-width: 60px;
 }
 
+/* Pagination ------------------------------------------------------------------------------ */
+
+.pagination {
+  position: absolute;
+  margin-top: 2em;
+  right: 1em;
+  }
 
 
 
